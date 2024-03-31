@@ -1,13 +1,13 @@
 fun main(args: Array<String>){
 
-    val user = User("Allan", "George", 26)
+    val user = Person("Allan", "George", 26)
 
-    val friend = User("John", "Smith", 28)
+    val friend = Person("John", "Doe", 28)
 
     println("I am ${user.name} and my friend's name is ${friend.name}")
 }
 
-class User(name: String, var lastName: String, var age: Int) {
+class Person(name: String, var lastName: String, var age: Int) {
 
     var name: String = name
 

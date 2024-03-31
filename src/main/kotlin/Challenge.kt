@@ -25,7 +25,6 @@ fun main(args: Array<String>) {
         println(i)
     }
 
-    println()
     println("Even numbers = $evenNumbersCounter")
     println("Even numbers using for loop = $evenNumbersCounter")
 }

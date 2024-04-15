@@ -1,22 +1,39 @@
 fun main(args: Array<String>) {
-    for(direction in Direction.entries){
-        println(direction)
+//    for(direction in Direction.entries){
+//        println(direction)
+//    }
+
+    val direction = Direction.valueOf("east".uppercase())
+    when(direction) {
+        Direction.EAST -> println("The direction is east")
+        Direction.NORTH -> println("The direction is north")
+        Direction.SOUTH -> println("The direction is south")
+        Direction.WEST -> println("The direction is west")
     }
-    println(Direction.NORTH.direction)
-    println(Direction.NORTH.distance)
-    println(Direction.NORTH.name)
-    println()
-    println(Direction.SOUTH.direction)
-    println(Direction.SOUTH.distance)
-    println(Direction.SOUTH.name)
-    println()
-    println(Direction.EAST.direction)
-    println(Direction.EAST.distance)
-    println(Direction.EAST.name)
-    println()
-    println(Direction.WEST.direction)
-    println(Direction.WEST.distance)
-    println(Direction.WEST.name)
+
+    val direction1 = Direction.valueOf("north".uppercase())
+    when(direction1) {
+        Direction.EAST -> println("The direction is east")
+        Direction.NORTH -> println("The direction is north")
+        Direction.SOUTH -> println("The direction is south")
+        Direction.WEST -> println("The direction is west")
+    }
+
+    val direction2 = Direction.valueOf("south".uppercase())
+    when(direction2) {
+        Direction.EAST -> println("The direction is east")
+        Direction.NORTH -> println("The direction is north")
+        Direction.SOUTH -> println("The direction is south")
+        Direction.WEST -> println("The direction is west")
+    }
+
+    val direction3 = Direction.valueOf("west".uppercase())
+    when(direction3) {
+        Direction.EAST -> println("The direction is east")
+        Direction.NORTH -> println("The direction is north")
+        Direction.SOUTH -> println("The direction is south")
+        Direction.WEST -> println("The direction is west")
+    }
 }
 
 enum class Direction(var direction: String, var distance: Int) {

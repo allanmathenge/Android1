@@ -1,5 +1,5 @@
 fun main(args: Array<String>){
-    val car1 = Vehicle("  Tesla  ", "S Plaid", "Red", 4)
+    val car1 = VehicleMode("  Tesla  ", "S Plaid", "Red", 4)
 
     println("Vehicle name = ${car1.name}")
     println("Vehicle model = ${car1.model}")
@@ -11,7 +11,7 @@ fun main(args: Array<String>){
 
     println("\n")
 
-    val car2 = Vehicle("Ford", "Mustang", "Red", 2)
+    val car2 = VehicleMode("Ford", "Mustang", "Red", 2)
 
     println("The Vehicle is = ${car2.name}!")
     println("The vehicle is = ${car2.model} model!")
@@ -22,7 +22,7 @@ fun main(args: Array<String>){
     car2.stop()
 }
 
-class Vehicle(name: String, var model: String, var color: String, var doors: Int) {
+class VehicleMode(name: String, var model: String, var color: String, var doors: Int) {
 
     // Assigning params to variables in properties is necessary when only some work need done on arguments, as shown
     // for example trim() for spaces on strings

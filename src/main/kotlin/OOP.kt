@@ -1,7 +1,7 @@
 fun main(args: Array<String>) {
     //created real obj initiating the template - Called instantiation. value and property
 
-    val car1 = Car()
+    val car1 = CarModels()
     car1.name = "Tesla"
     car1.model = "S Plaid"
     car1.color = "Red"
@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
 
     println("\n")
 
-    val car2 = Car()
+    val car2 = CarModels()
     car2.name = "Ford"
     car2.model = "Mustang"
     car2.color = "Blue"
@@ -31,7 +31,7 @@ fun main(args: Array<String>) {
     println(car2.move())
     println(car2.stop())
 
-    val myCar = Car()
+    val myCar = CarModels()
     myCar.name = "Honda civic"
     myCar.model = "Luxury"
     myCar.color = "White"
@@ -46,7 +46,7 @@ fun main(args: Array<String>) {
     myCar.move()
     myCar.stop()
 
-    val herCar = Car()
+    val herCar = CarModels()
     herCar.name = "Hybrid Outback"
     herCar.model = "Luxury car"
     herCar.color = "White"
@@ -64,7 +64,7 @@ fun main(args: Array<String>) {
 }
 
 // The Car is our template with states and functionality
-class Car {
+class CarModels {
     var name = ""
     var model = ""
     var color = ""

@@ -1,12 +1,10 @@
-import java.time.temporal.TemporalAmount
-
 fun main(args: Array<String>) {
-    val account = Account("Allan", 100, "New")
+    val account = Account10("Allan", 100, "New")
     account.deposit(30)
     account.withdraw(20)
 }
 
-class Account(val name: String, val balance: Int, val transaction: String) {
+class Account10(val name: String, val balance: Int, val transaction: String) {
     private var amount = 0
     fun deposit( amtDeposited: Int) {
         println("$transaction transaction was done on $name's account")

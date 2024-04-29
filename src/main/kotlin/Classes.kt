@@ -12,7 +12,7 @@ class Aeroplane(name: String, var model: String, var color: String, var doors: I
 
 }
 
-class User(var firstName: String, var lastName: String, var age: Int) {
+class User12(var firstName: String, var lastName: String, var age: Int) {
 
     lateinit var favoriteMovie: String
 }

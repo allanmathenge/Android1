@@ -1,4 +1,4 @@
-//fun main(args: Array<String>){
+fun main(args: Array<String>){
 //    for (i in 1..20){
 //
 //        // Value of i is printed at each iteration

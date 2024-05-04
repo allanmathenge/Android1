@@ -1,18 +1,47 @@
 fun main(args: Array<String>) {
-    val sub1 = Submarine("KE Sub", 16)
-    val sub2 = Submarine("KE Sub", 16)
-    println(sub1 == sub2)
 
+}
 
-    // While loops
+class App1: B1 by Mobile1(), B3 by Mobile(), B4 by Mobile2() {
+    override fun call() {
 
-    var num = 0
-    while (num <= 5) {
-        num++
-        println(num)
+    }
+
+    override fun call2() {
+
+    }
+
+    override fun call3() {
+
     }
 
 }
 
-data class Submarine(private val name: String, private val position: Int)
+interface B1 {
+    fun call()
+}
 
+interface B3 {
+    fun call2()
+}
+
+interface B4 {
+    fun call3()
+}
+
+open class Mobile1: B1 {
+    override fun call() {
+
+    }
+}
+open class Mobile: B3 {
+    override fun call2() {
+
+    }
+}
+
+open class Mobile2: B4 {
+    override fun call3() {
+
+    }
+}
